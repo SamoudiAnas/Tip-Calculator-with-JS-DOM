@@ -107,6 +107,10 @@ section .container .inputs .tip-percentage-container .tip-percentage:hover {
   cursor: pointer;
 }
 
+section .container .inputs .tip-percentage-container .tip-percentage:active {
+  background-color: #0A100D;
+}
+
 section .container .inputs .tip-percentage-container .tip-percentage.custom {
   color: #FF715B;
   background-color: transparent;

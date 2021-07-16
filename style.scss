@@ -16,6 +16,7 @@ $red : #523F38;
 
 
 section{
+    
     width: 100%;
     height: 100vh;
     
@@ -111,6 +112,9 @@ section{
                         cursor: pointer;
                     }
 
+                    &:active{
+                        background-color: $dark;
+                    }
                     
 
                     &.custom{
@@ -118,7 +122,7 @@ section{
                         background-color: transparent;
                         border: 1px solid $sage;
                         position: relative;
-                        
+
                         .customInput{
                             opacity: 0;
                             position: absolute;

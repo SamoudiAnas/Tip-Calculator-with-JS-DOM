@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem;
+  background-color: #d6d5c9;
+}
+
+.title {
+  width: 12rem;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5rem;
+  padding-bottom: 2.25rem;
+  background-color: #523f38;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.title .tip {
+  font-size: 4rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    width: 80vw;
+    margin: 2.5rem auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.inputs {
+  width: calc(50% - 1rem);
+}
+
+.inputs label {
+  color: #ff715b;
+  font-weight: 700;
+}
+
+.inputs .input-container {
+  position: relative;
+}
+
+.inputs .input-container .icon {
+  position: absolute;
+  top: 62.5%;
+  left: 1.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.inputs .input {
+  margin-top: 2%;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  direction: rtl;
+  border-radius: 0.5rem;
+  border: transparent;
+  background-color: #d6d5c9;
+  color: #ff715b;
+  font-weight: 700;
+  font-size: 1rem;
+  outline: none;
+  /* Firefox */
+}
+
+.inputs .input::-webkit-outer-spin-button, .inputs .input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputs .input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.tip-percentage-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tip-percentage {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 30%;
+  background-color: #523f38;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  border: transparent;
+  margin-top: 0.5rem;
+}
+
+.tip-percentage:hover {
+  background-color: #0a100d;
+  cursor: pointer;
+}
+
+.tip-percentage.custom {
+  color: #ff715b;
+  background-color: transparent;
+  border: 1px solid #ff715b;
+  position: relative;
+}
+
+.tip-percentage.custom .customInput {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 3rem;
+  border: none;
+  direction: rtl;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  color: #ff715b;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.results {
+  position: relative;
+  width: calc(50% - 1rem);
+  background-color: #523f38;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .results {
+    margin-top: 3rem;
+  }
+}
+
+.results .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8%;
+}
+
+.results .price h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.results .price h3 .per-person {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #ff715b;
+}
+
+.results .price h1 {
+  font-size: 3rem;
+  color: #ff715b;
+}
+
+.results .price h1::before {
+  content: "$";
+}
+
+.results .reset-btn {
+  bottom: 0;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  background-color: white;
+  background-color: #ff715b;
+  border: transparent;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

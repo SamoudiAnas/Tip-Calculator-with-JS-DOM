@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Tip Calculator</title>
 </head>
 <body>
@@ -19,8 +19,8 @@
                 <label for="">Bill</label>
                 <br>
                 <div class="input-container">
-                    <div class="icon"><img src="./images/icon-dollar.svg" alt="" ></div>
-                    <input value="0" type="text" name="" class="input " id="billAmount">
+                    <div class="icon"><img src="./assets/images/icon-dollar.svg" alt="" ></div>
+                    <input placeholder="0" type="number" name="" class="input " id="billAmount">
                 </div>
                 
 
@@ -29,45 +29,45 @@
                 <br>
                 <label for="">Select Tip %</label>
                 <div class="tip-percentage-container">
-                    <div class="tip-percentage" onclick="setPercentage(0.05)" id="5%">5%</div>
-                    <div class="tip-percentage" onclick="setPercentage(0.10)" id="10%">10%</div>
-                    <div class="tip-percentage" onclick="setPercentage(0.15)" id="15%">15%</div>
+                    <button class="tip-percentage" onclick="setPercentage(0.05)" id="5%">5%</button>
+                    <button class="tip-percentage" onclick="setPercentage(0.10)" id="10%">10%</button>
+                    <button class="tip-percentage" onclick="setPercentage(0.15)" id="15%">15%</button>
                    
                     
-                </div>
-                <div class="tip-percentage-container">
-                    <div class="tip-percentage" onclick="setPercentage(0.25)" id="25%">25%</div>
-                    <div class="tip-percentage" onclick="setPercentage(0.5)" id="50%">50%</div>
-                    <div class="tip-percentage custom" onclick="ListenToCustom()">
+                
+                    <button class="tip-percentage" onclick="setPercentage(0.25)" id="25%">25%</button>
+                    <button class="tip-percentage" onclick="setPercentage(0.5)" id="50%">50%</button>
+                    <button class="tip-percentage custom" onclick="listenToCustom()">
                         Custom
-                        <input type="text" value="0" name="" id="customInput" class="customInput">
+                        <input type="number" placeholder="0" name="" id="customInput" class="customInput">
                     </div>
-                </div>
+                </button>
                 
                 <br>
                 <label for="">Number of People</label>
                 <br>
                 <div class="input-container">
-                    <div class="icon"><img src="./images/icon-person.svg" alt="" srcset=""></div>
-                    <input value="1" type="text" name="" class="input " id="numberOfPeople">
+                    <div class="icon"><img src="./assets/images/icon-person.svg" alt="" srcset=""></div>
+                    <input placeholder="1" type="number" name="" class="input " id="numberOfPeople">
                 </div>
 
 
             </div>
 
             <div class="results">
-                <div class="price">
-                    <h3>Tip Amount <br><span class="per-person">/person</span></h3>
-                    <h1 id="tipPerPerson">0.00</h1>
+                <div class="prices">
+                    <div class="price">
+                        <h3>Tip Amount <br><span class="per-person">/person</span></h3>
+                        <h1 id="tipPerPerson">0.00</h1>
+                    </div>
+                    <div class="price">
+                        <h3>Total <br><span class="per-person">for all</span></h3>
+                        <h1 id="totalPerPerson">0.00</h1>
+                    </div>
                 </div>
-                <div class="price">
-                    <h3>Total <br><span class="per-person">for all</span></h3>
-                    <h1 id="totalPerPerson">0.00</h1>
-                </div>
-                <div class="btn-container">
-                    <button onclick="Reset()">Reset</button>
-                </div>
-               
+                <div 
+                
+                <button class="reset-btn" onclick="reset()">Reset</button>
 
             </div>
             
@@ -77,6 +77,6 @@
 
 
 
-    <script src="app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
